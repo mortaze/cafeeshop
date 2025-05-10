@@ -35,6 +35,9 @@ function Footer() {
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است.
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است.
           </p>
         </div>
         <div className="newsletter-form">
@@ -47,57 +50,79 @@ function Footer() {
         </div>
 
         <style jsx>{`
-          .newsletter-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f1f1f3;
-            border-radius: 20px;
-            padding: 2rem;
-            direction: rtl;
-            flex-wrap: wrap;
-            gap: 1rem;
-          }
+  .newsletter-container {
+    display: flex;
+    flex-direction: column; /* ستون‌بندی در موبایل */
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f3;
+    border-radius: 20px;
+    padding: 2rem;
+    direction: rtl;
+    gap: 1rem;
+  }
 
-          .newsletter-text {
-            flex: 1 1 50%;
-            min-width: 300px;
-          }
+  .newsletter-text {
+    width: 100%;
+    text-align: right;
+  }
 
-          .newsletter-form {
-            flex: 1 1 40%;
-            display: flex;
-            align-items: center;
-            background-color: white;
-            border-radius: 30px;
-            overflow: hidden;
-            padding: 0.3rem;
-            min-width: 300px;
-          }
+  .newsletter-form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0.3rem;
+  }
 
-          .email-input {
-            flex: 1;
-            border: none;
-            padding: 0.8rem;
-            font-size: 1rem;
-            outline: none;
-            direction: rtl;
-          }
+  .email-input {
+    flex: 1;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    outline: none;
+    direction: rtl;
+    min-width: 0; /* ✅ برای جلوگیری از overflow */
+  }
 
-          .submit-button {
-            background-color: #007f5f;
-            color: white;
-            border: none;
-            padding: 0.8rem 1rem;
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: bold;
-          }
+  .submit-button {
+    background-color: #007f5f;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap; /* ✅ جلوگیری از شکست متن */
+    font-size: 0.9rem;
+  }
 
-          .submit-button:hover {
-            background-color: #005f43;
-          }
-        `}</style>
+  .submit-button:hover {
+    background-color: #005f43;
+  }
+
+  /* ✅ مخصوص موبایل‌های کوچکتر از 425px */
+  @media (max-width: 425px) {
+    .newsletter-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .email-input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .submit-button {
+      width: 100%;
+    }
+  }
+`}</style>
+
       </div>
 
       <br />
@@ -194,10 +219,19 @@ function Footer() {
         </div>
       </div>
 
-      {/* کپی‌رایت */}
-      <div className="text-center text-xs text-white mt-8 border-t pt-4">
-        © {new Date().getFullYear()} تمامی حقوق محفوظ است | فروشگاه کنسول و بازی
-      </div>
+     {/* کپی‌رایت */}
+<div className="text-center text-xs text-white mt-8 border-t pt-4">
+  © {new Date().getFullYear()} تمامی حقوق محفوظ است | تیم طراحی{" "}
+  <a
+    href="https://multiwb.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:underline"
+  >
+    مولتی وب
+  </a>
+</div>
+
     </footer>
   );
 }

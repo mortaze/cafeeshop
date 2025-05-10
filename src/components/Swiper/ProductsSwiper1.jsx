@@ -162,7 +162,7 @@ const slideData = [
 export default function App() {
   return (
     <>
-      <h2 className="text-black font-extrabold font-[Vazir] text-2xl my-5 text-center w-[90%] mx-auto">
+      <h2 className="text-black font-extrabold font-[Vazirmatn] text-2xl my-5 text-center w-[90%] mx-auto">
         محصولات تخفیفی
         <span className="block mt-2 w-full h-1 bg-[#007e57] rounded-full"></span>
       </h2>
