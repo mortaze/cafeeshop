@@ -8,7 +8,7 @@ function Header() {
   const [menu, setmenu] = useState(false);
   return (
     <>
-      <header className="bg-[#f7f7f7]">
+      <header className="bg-[#f7f7f7] font-[Vazirmatn]">
         <div className="container flex w-[90%] mx-auto my-5 bg-[#EFEFF1] rounded-[20px]">
           <div className="w-1/4 my-auto p-3 md:hidden">
             <NavBar />
@@ -25,7 +25,7 @@ function Header() {
                 key={idx}
                 to={item.to}
                 className={({ isActive }) =>
-                  `text-sm font-[Vazir] font-semibold whitespace-nowrap ${
+                  `text-sm font-[Vazirmatn] font-semibold whitespace-nowrap ${
                     isActive ? "text-blue-600" : "text-black"
                   }`
                 }
@@ -44,7 +44,8 @@ function Header() {
 
             <span className="text-[13px] align-middle my-auto font-bold text-center">
               {" "}
-              فروشگاه قـهوه و لـوازم کافـی شاپ
+              فروشگاه قهوه چی
+
             </span>
           </div>
           <div className="order-3 w-1/4 flex justify-center p-3 gap-2">

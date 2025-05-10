@@ -34,9 +34,10 @@ function NavBar() {
               className="size-12 p-1"
             />
 
-            <span className="text-[13px] align-middle my-auto font-bold text-center">
+            <span className="text-[13px] font-[Vazirmatn] align-middle my-auto font-bold text-center">
               {" "}
-              فروشگاه قـهوه و لـوازم کافـی شاپ
+              فروشگاه قهوه چی
+
             </span>
           </div>
           <IoCloseCircle
@@ -58,7 +59,7 @@ function NavBar() {
         </div>
 
         {/* لینک‌ها */}
-        <div className="mt-6 flex flex-col gap-2">
+        <div className="mt-6 flex flex-col  gap-2">
           {[
             { to: "/", label: "صفحه اصلی" },
             { to: "/shop", label: "فروشگاه" },
@@ -71,7 +72,7 @@ function NavBar() {
               key={idx}
               to={item.to}
               className={({ isActive }) =>
-                `w-5/6 mx-auto p-3 rounded-md text-sm font-[Vazir] font-semibold ${
+                `w-5/6 mx-auto p-3 rounded-md text-sm font-[Vazirmatn] font-semibold ${
                   isActive
                     ? "bg-blue-400 text-white"
                     : "bg-white outline-dashed outline-1"

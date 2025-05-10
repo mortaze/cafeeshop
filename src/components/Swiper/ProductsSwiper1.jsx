@@ -188,7 +188,7 @@ export default function App() {
         {slideData.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative flex flex-col items-center justify-between p-4 h-80 md:h-96 lg:h-[26rem] rounded-2xl bg-[#f7f7f8] shadow-lg border border-white/20 transition-all duration-300 hover:scale-[0.98]"
+              className="relative flex flex-col items-center justify-between p-4 h-80 md:h-96 lg:h-[26rem] rounded-2xl bg-[#efeff1] shadow-lg border border-white/20 transition-all duration-300 hover:scale-[0.98]"
             >
               {/* Discount Badge */}
               <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-lg shadow-md">

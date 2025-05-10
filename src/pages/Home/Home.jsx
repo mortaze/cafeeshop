@@ -23,7 +23,7 @@ function CoffeeServices() {
   {/* بخش متن و دکمه‌ها */}
   <div className="w-full md:w-1/2 text-right pr-4 space-y-6">
     <h2 className="text-2xl text-black mb-4">آنلاین شاپ تخصصی</h2>
-    <h3 className="text-3xl font-bold text-black mb-6">انواع قـهوه و لـوازم کافـی شاپ</h3>
+    <h3 className="text-3xl font-bold text-black mb-6">انواع  و لـوازم کافـی شاپ</h3>
     <p className="text-black mb-6 leading-loose">
     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز میباشد
     </p>
@@ -64,7 +64,7 @@ function CoffeeServices() {
     </div>
   <ProductSwiper1 />
 
-    
+  <br/>
    
     <div className="w-full bg-[#1B1B1D] py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
   {/* تصویر سمت چپ */}
